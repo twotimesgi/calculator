@@ -30,11 +30,28 @@ for(let i = 0; i < nums.length; i++){
 
 for(let i = 3; i < 7; i++){
   opers[i].addEventListener("click", function(){
+    if(currentOp == "+"){
+        opers[6].style.background = "#ff911c"
+        opers[6].style.color = "white";
+        console.log(currentOp);
+    }else if(currentOp == "-"){
+      opers[5].style.background = "#ff911c"
+      opers[5].style.color = "white";
+      console.log(currentOp);
+
+    }else if(currentOp == "x"){
+      opers[4].style.background = "#ff911c"
+      opers[4].style.color = "white";
+      console.log(currentOp);
+    }else if(currentOp == "÷"){
+      opers[3].style.background = "#ff911c"
+      opers[3].style.color = "white";
+      console.log(currentOp);
+    }
     n = m;
     m = "";
     res.innerHTML = "0";
     currentOp = opers[i].dataset.func.toString();
-    console.log(currentOp);
     opers[i].style.background = "white"
     opers[i].style.color = "#ff911c";
   });
