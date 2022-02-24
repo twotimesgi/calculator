@@ -1,6 +1,7 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
 .calc{
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +10,7 @@ body{
   background: black;
   width: 270px;
 }
+
 #res{
   width: 100%;
   height: 70px;
@@ -17,24 +19,32 @@ body{
   font-size: 50pt;
   overflow-y: scroll;
 }
+
 .btn{
   height: 60px;
   width: 60px;
   border: 0px;
   border-radius: 50%;
   font-size: 25px;
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
 }
+
 .btn.oper{
   background-color: #c4c4c4;
 }
+
 .btn.num{
   background-color: #404040;
   color: white;
 }
+
 .btn.num.btn--zero{
   width: 130px;
   border-radius: 30px;
 }
+
 .btn.oper.sign{
   background-color: #ff911c;
   color: white;

@@ -11,6 +11,10 @@ for(let i = 0; i < nums.length; i++){
     if(m == ""){
     	res.innerHTML ="";
     }
+    if(m[0] == "0"){
+      m = ""
+      res.innerHTML = "";
+    }
     res.innerHTML += nums[i].dataset.func.toString();
     m += nums[i].dataset.func.toString();
   });
@@ -78,6 +82,15 @@ opers[0].addEventListener("click", function(){ //C
   res.innerHTML = "0";
   m = "";
   n = "";
+  currentOp = "";
+  opers[3].style.background = "#ff911c"
+  opers[3].style.color = "white";
+  opers[4].style.background = "#ff911c"
+  opers[4].style.color = "white";
+  opers[5].style.background = "#ff911c"
+  opers[5].style.color = "white";
+  opers[6].style.background = "#ff911c"
+  opers[6].style.color = "white";
   currentOp = "";
 });
 
