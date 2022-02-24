@@ -112,6 +112,11 @@ opers[1].addEventListener("click", function(){
   }
 });
 
+opers[2].addEventListener("click", function(){
+  m = m / 100;
+  res.innerHTML = res.innerHTML/100;
+});
+
 
 
 
