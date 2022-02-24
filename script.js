@@ -106,7 +106,7 @@ opers[1].addEventListener("click", function(){
   if(res.innerHTML[0] != "-" && res.innerHTML[0] != "0"){
     res.innerHTML = "-" + res.innerHTML;
     m = "-" + m;
-  }else{
+  }else if(res.innerHTML.length > 1){
       m =  m.slice(1,res.innerHTML.length);
       res.innerHTML = res.innerHTML.slice(1,res.innerHTML.length);
   }
