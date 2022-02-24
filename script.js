@@ -11,12 +11,20 @@ for(let i = 0; i < nums.length; i++){
     if(m == ""){
     	res.innerHTML ="";
     }
-    if(m[0] == "0"){
+    if(m == "0"){
       m = ""
       res.innerHTML = "";
     }
+    if(nums[i].dataset.func.toString() == "."){
+      m = "0";
+      res.innerHTML = "0"
+    }
     res.innerHTML += nums[i].dataset.func.toString();
     m += nums[i].dataset.func.toString();
+    nums[i].style.animation = "flash 0.2s linear 1";
+    nums[i].addEventListener("animationend",function(){
+      nums[i].style.animation = "none";
+    });
   });
 }
 
@@ -94,6 +102,15 @@ opers[0].addEventListener("click", function(){ //C
   currentOp = "";
 });
 
+opers[1].addEventListener("click", function(){
+  if(res.innerHTML[0] != "-" && res.innerHTML[0] != "0"){
+    res.innerHTML = "-" + res.innerHTML;
+    m = "-" + m;
+  }else{
+      m =  m.slice(1,res.innerHTML.length);
+      res.innerHTML = res.innerHTML.slice(1,res.innerHTML.length);
+  }
+});
 
 
 
