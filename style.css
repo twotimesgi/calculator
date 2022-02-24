@@ -34,7 +34,7 @@ body{
   height: calc(25vw - 40px/4 - 10px);
   width: calc(25vw - 40px/4 - 10px);
   border-radius: 50%;
-  font-size: 3em;
+  font-size: 2.5em;
   display: inline-block;
   text-align: center;
   line-height: calc(25vw - 40px/4 - 5px);
