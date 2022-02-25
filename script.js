@@ -115,8 +115,8 @@ opers[1].addEventListener("click", function(){ //+/-
 });
 
 opers[2].addEventListener("click", function(){ //%
-  m = m / 100;
-  res.innerHTML = res.innerHTML/100;
+  m = (m / 100)*n;
+  res.innerHTML = (res.innerHTML / 100)*n;
   opers[2].style.animation = "flash 0.2s linear 1";
   opers[2].addEventListener("animationend",function(){
     opers[2].style.animation = "none";
